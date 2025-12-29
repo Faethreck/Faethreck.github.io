@@ -22,8 +22,8 @@
       --text:#EFE8DD;
       --muted: rgba(239,232,221,.70);
       --muted2: rgba(239,232,221,.55);
-      --gold:#D8CDBD;   /* luxury */
-      --sage:#A7B89B;   /* studio hint */
+      --gold:#D8CDBD;
+      --sage:#A7B89B;
       --border: rgba(239,232,221,.10);
       --shadow: 0 18px 60px rgba(0,0,0,.45);
       --radius: 18px;
@@ -172,6 +172,7 @@
       background: transparent;
       border-color: rgba(239,232,221,.14);
     }
+    .btn.small{ padding:10px 14px; font-size:.95rem; }
 
     .menu{
       display:none;
@@ -266,6 +267,12 @@
       .hero{ padding-top:62px; }
     }
 
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(239,232,221,.10), transparent);
+      margin-top:22px;
+    }
+
     /* ABOUT */
     .about{
       padding:26px;
@@ -323,7 +330,6 @@
       background: rgba(9,12,11,.32);
     }
     .card-actions{ display:flex; gap:10px; flex-wrap:wrap; }
-    .btn.small{ padding:10px 14px; font-size:.95rem; }
 
     .embed-wrap{
       padding:14px;
@@ -486,12 +492,6 @@
       transition: transform .15s ease, border-color .2s ease;
     }
     .icon:hover{ transform: translateY(-1px); border-color: rgba(167,184,155,.35); }
-
-    .divider{
-      height:1px;
-      background: linear-gradient(90deg, transparent, rgba(239,232,221,.10), transparent);
-      margin-top:22px;
-    }
   </style>
 </head>
 
@@ -677,25 +677,35 @@
     <div class="container">
       <div class="eyebrow">Studio</div>
       <h2 class="h2">Analog feel. Modern control.</h2>
-      <p class="lead">A quick look at my environment and tools. (Replace the gear placeholders with your real list.)</p>
+      <p class="lead">A quick look at my environment and tools.</p>
 
       <div class="panel studio">
         <div class="studio-left">
-          <h3 style="margin:0 0 8px; font-size:1.2rem; letter-spacing:-.01em;">Workflow & tools</h3>
+          <h3 style="margin:0 0 8px; font-size:1.2rem; letter-spacing:-.01em;">Studio / Gear</h3>
           <p class="lead" style="margin:0;">
-            I work reference-first: intent → tone → translation. A hybrid approach that keeps warmth while staying clean and controlled.
+            Hybrid workflow built for warmth and translation — clean low-end, vocal clarity, and depth that holds up on earbuds,
+            cars, and proper monitors. Sessions stay musical first, technical second.
           </p>
 
           <div class="gear-list" aria-label="Gear list">
-            <div class="gear-item"><strong>Monitoring:</strong> (add your monitors + headphones)</div>
-            <div class="gear-item"><strong>Interface:</strong> (e.g., Audient iD14)</div>
-            <div class="gear-item"><strong>Mics / Pre:</strong> (add your mic + preamp chain)</div>
-            <div class="gear-item"><strong>Software:</strong> (DAW + key plugins)</div>
+            <div class="gear-item"><strong>Interface:</strong> Audient iD14</div>
+            <div class="gear-item"><strong>Monitors:</strong> Yamaha HS7</div>
+            <div class="gear-item"><strong>Headphones:</strong> Beyerdynamic DT 990 Pro • Beyerdynamic DT 770</div>
+            <div class="gear-item"><strong>Mics:</strong> Aston Origin • Shure SM58</div>
+            <div class="gear-item"><strong>DAW:</strong> Ableton Live</div>
+            <div class="gear-item"><strong>Instruments:</strong> Addictive Drums • Arturia Analog Lab</div>
+            <div class="gear-item"><strong>Mix chain staples:</strong> 1176 • LA-2A • FabFilter Pro-Q 4 • FabFilter Saturn</div>
+            <div class="gear-item"><strong>Immersive:</strong> Dolby Atmos Renderer</div>
+          </div>
+
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn small primary" href="#work">Listen to work</a>
+            <a class="btn small" href="#contact">Request a quote</a>
           </div>
         </div>
 
         <div class="photo-grid" aria-label="Studio photos">
-          <!-- Put your uploaded images into /assets and keep these paths -->
+          <!-- Put your images in /assets and keep these paths -->
           <figure class="photo wide">
             <img src="assets/studio-sunset.jpg" alt="Sunset over water — studio mood" loading="lazy" />
             <figcaption class="cap">Mood & direction — warm, cinematic tone</figcaption>
@@ -759,7 +769,7 @@
       <p class="lead">Send a demo link + 1–2 reference tracks. I’ll reply with scope, timeline, and deliverables.</p>
 
       <div class="panel contact">
-        <!-- Quote-only: mailto is simplest (no backend). If you want Formspree later, I can swap it. -->
+        <!-- Quote-only: mailto is simplest (no backend). -->
         <form action="mailto:patriciorousseauadrian@hotmail.com" method="post" enctype="text/plain">
           <div>
             <label for="name">Name</label>
